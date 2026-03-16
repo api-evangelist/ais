@@ -1,16 +1,27 @@
+aid: ais
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/ais/refs/heads/main/apis.yml
 name: AIS
-description: The Automatic Identification System (AIS) is a shipboard broadcast transponder
-  system operating in the VHF maritime band that transmits and receives vessel identification,
-  position, speed, heading, and other navigational data to enhance maritime situational
-  awareness and safety.
-url: https://www.navcen.uscg.gov/automatic-identification-system-overview
 tags:
-- Maritime
-- Navigation
-- Safety
-- Vessel Tracking
-- Transportation
-created: '2025'
-modified: '2025'
+  - Maritime
+  - Navigation
+  - Safety
+  - Vessel Tracking
+  - Transportation
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+description: >-
+  The Automatic Identification System (AIS) is a shipboard broadcast transponder
+  system operating in the VHF maritime band that transmits and receives vessel
+  identification, position, speed, heading, and other navigational data to
+  enhance maritime situational awareness and safety.
+created: '2025-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
-common: []
+common:
+  - url: https://www.navcen.uscg.gov/automatic-identification-system-overview
+    type: Website
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
