@@ -46,6 +46,12 @@ apis:
       - Analytics
       - Client Portal
       - Investment Analytics
+      - Portfolio-Management
+      - Reporting
+    tags_raw:
+      - Analytics
+      - Client Portal
+      - Investment Analytics
       - Portfolio Management
       - Reporting
     properties:
