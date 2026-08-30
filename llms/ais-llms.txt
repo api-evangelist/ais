@@ -1,0 +1,61 @@
+# AIS Group (AIS Capital Management, L.P.)
+
+> AIS Capital Management, L.P. is an investment management firm running absolute-return,
+> global macro strategies for financial advisors and individual investors. "AIS" stands for
+> "Applied Intelligence Strategies." The firm publishes no public API, no developer program,
+> and no machine-readable contract of any kind; this file exists so an agent reading it stops
+> looking rather than guessing at an endpoint.
+
+<!--
+generated: 2026-08-30
+method: generated
+source: apis.yml + live probes of www.aisgroup.com and clients.aisgroup.com (2026-08-30)
+note: Written by API Evangelist, not by AIS. AIS serves no /llms.txt of its own (404).
+-->
+
+## What this company is
+
+AIS Capital Management is a registered investment manager, not a software vendor. Its products
+are investment programs — a discretionary Multi-Asset Allocation Portfolio family and the
+systematic Frontera programs — delivered as managed accounts, not as software. Instruments are
+limited to liquid, major-exchange listings, and the firm describes its methods as transparent
+rather than black-box.
+
+## API surface
+
+There is none that is public. Verified 2026-08-30:
+
+- No developer portal, API reference, or documentation host (/developers, /developer, /docs,
+  /api-docs all return 404).
+- No OpenAPI, Swagger, GraphQL, AsyncAPI, gRPC or WSDL contract on any host named in the profile.
+- No /.well-known/* document on either host — security.txt, api-catalog, openid-configuration,
+  oauth-authorization-server, oauth-protected-resource, ai-plugin.json, agent-card.json and
+  agent.json all 404.
+- No MCP server and no A2A agent card.
+- No published pricing or rate-limit page (/pricing and /plans return 404); fees are an advisory
+  relationship, disclosed in the firm's Form ADV.
+
+## The client portal is a third party
+
+https://clients.aisgroup.com is a white-labeled Onehub workspace (requests land on
+ws.onehub.com/signin). It is a licensed document-sharing product AIS uses to serve clients, not
+software AIS builds or exposes. Any API behind it belongs to Onehub, not to AIS, and is out of
+scope for this profile.
+
+## Public pages
+
+- Home: https://www.aisgroup.com/
+- About AIS: https://www.aisgroup.com/about-ais
+- Why Invest?: https://www.aisgroup.com/why-invest
+- Financial Advisors: https://www.aisgroup.com/financial-advisors
+- Individual Investors: https://www.aisgroup.com/individual-investors
+- Team: https://www.aisgroup.com/AIS-Team
+- Contact: https://www.aisgroup.com/contact
+- Privacy Policy: https://www.aisgroup.com/privacy-policy
+- Form ADV Part 3 (CRS): https://www.aisgroup.com/All/PDFs/AIS%20Form%20ADV%20Part%203%20CRS%20Feb%202026.pdf
+- Client portal sign-in (Onehub): https://clients.aisgroup.com/
+
+## Contact
+
+info@aisgroup.com — for anything about the firm itself.
+For anything about this profile: https://github.com/api-evangelist/ais/issues

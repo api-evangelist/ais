@@ -1,0 +1,73 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTPS probes of every host named in apis.yml (www.aisgroup.com, clients.aisgroup.com)
+provider: AIS Group
+providerId: ais
+description: >-
+  Well-known URI probe record for AIS Capital Management. Every RFC 8615 path was
+  requested anonymously on both hosts named in apis.yml. Nothing is served: the
+  marketing site is a Drupal install that answers 404 with an HTML error page for
+  every /.well-known/* path, and clients.aisgroup.com is a white-labeled Onehub
+  workspace that answers its own vendor 404 page. No WellKnown or SecurityTxt
+  pointer is emitted, because no path returned a document.
+hosts:
+  - host: www.aisgroup.com
+    note: Drupal marketing site for AIS Capital Management, L.P.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: clients.aisgroup.com
+    note: >-
+      Client portal. Resolves to Onehub (ws.onehub.com) — a licensed third-party
+      workspace, not software AIS operates; its 404 body is titled "404 - Onehub".
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+checked: '2026-08-30'
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

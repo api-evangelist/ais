@@ -5,8 +5,9 @@ name: AIS Group
 tags:
   - Analytics
   - Finance
-  - Insurance
+  - Global Macro
   - Investment Analytics
+  - Investment Management
   - Risk Management
 type: Index
 deliveryModel:
@@ -34,24 +35,32 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ais.png
 description: >-
-  AIS Group is an analytics and investment management firm providing
-  independent, data-driven insights across global financial markets. The firm
-  combines macroeconomic research with quantitative analytics to deliver
-  non-correlated investment strategies for financial advisors and institutional
-  clients, with a focus on commodity, currency, equity, and fixed-income market
-  analysis.
+  AIS Group — trading as AIS Capital Management, L.P., where AIS stands for
+  "Applied Intelligence Strategies" — is an investment management firm running
+  absolute-return, global macro programs for financial advisors and individual
+  investors. It combines discretionary macroeconomic and intermarket research
+  (the Multi-Asset Allocation Portfolio family) with systematic, shorter-horizon
+  models (the Frontera programs), trading only liquid instruments listed on major
+  exchanges and describing its methodology as transparent rather than black-box.
+  The firm is an investment manager rather than a software vendor: it publishes no
+  public API, no developer program and no machine-readable contract, and its
+  client portal is a licensed third-party workspace rather than software it
+  operates.
 created: '2025-01-01'
-modified: '2026-04-19'
+modified: '2026-08-30'
 specificationVersion: '0.23'
 apis:
   - aid: ais:ais-client-portal
     name: AIS Client Portal
     description: >-
-      The AIS Client Portal provides investment analytics, portfolio management,
-      and reporting tools for financial advisors and individual investors. The
-      portal enables access to AIS investment strategies, performance data,
-      risk analytics, and account management features through a secure
-      web-based interface.
+      The AIS Client Portal is the secure area where financial advisors and
+      individual investors reach AIS statements, performance reporting and
+      account documents. Probed 2026-08-30: clients.aisgroup.com is a
+      white-labeled Onehub workspace — every request lands on ws.onehub.com and
+      its error pages are titled "404 - Onehub" — so it is a licensed
+      third-party document-sharing product, not software AIS builds. It exposes
+      no public API, no documentation host and no machine-readable contract;
+      any API behind it belongs to Onehub and is out of scope for this profile.
     humanURL: https://clients.aisgroup.com
     tags:
       - Analytics
@@ -66,13 +75,13 @@ apis:
       - Portfolio Management
       - Reporting
     properties:
-      - type: Documentation
-        url: https://www.aisgroup.com
       - type: Login
         url: https://clients.aisgroup.com
 common:
   - type: DomainSecurity
     url: security/ais-domain-security.yml
+  - type: LLMsTxt
+    url: llms/ais-llms.txt
   - type: Website
     url: https://www.aisgroup.com
   - type: Contact
@@ -122,3 +131,31 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    AIS Capital Management, L.P. is a registered investment manager whose product is a
+    managed global-macro program, not software — the Drupal marketing site has no
+    developer, docs or API path, and the one "portal" in the profile is a white-labeled
+    Onehub workspace that redirects to ws.onehub.com/signin, so the only API in reach
+    belongs to a vendor rather than to AIS.
+  evidence:
+    - url: https://www.aisgroup.com/developers
+      status: 404
+    - url: https://www.aisgroup.com/openapi.json
+      status: 404
+    - url: https://www.aisgroup.com/.well-known/api-catalog
+      status: 404
+    - url: https://clients.aisgroup.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.aisgroup.com/api
+      status: 200
+    - url: https://www.aisgroup.com/
+      status: 200
+  checked: '2026-08-30'
