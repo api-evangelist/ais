@@ -51,6 +51,7 @@ modified: '2026-08-30'
 specificationVersion: '0.23'
 apis:
   - aid: ais:ais-client-portal
+    x-published: false
     name: AIS Client Portal
     description: >-
       The AIS Client Portal is the secure area where financial advisors and
@@ -66,7 +67,7 @@ apis:
       - Analytics
       - Client Portal
       - Investment Analytics
-      - Portfolio-Management
+      - Portfolio Management
       - Reporting
     tags_raw:
       - Analytics
@@ -74,6 +75,7 @@ apis:
       - Investment Analytics
       - Portfolio Management
       - Reporting
+      - Portfolio-Management
     properties:
       - type: Login
         url: https://clients.aisgroup.com
