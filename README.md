@@ -1,4 +1,4 @@
-# AIS Group (ais)
+# AIS Group
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,64 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AIS Group is an analytics and investment management firm providing independent, data-driven insights across global financial markets. The firm combines macroeconomic research with quantitative analytics to deliver non-correlated investment strategies for financial advisors and institutional clients, with a focus on commodity, currency, equity, and fixed-income market analysis.
+AIS Group — trading as AIS Capital Management, L.P., where AIS stands for "Applied Intelligence Strategies" — is an investment management firm running absolute-return, global macro programs for financial advisors and individual investors. It combines discretionary macroeconomic and intermarket research (the Multi-Asset Allocation Portfolio family) with systematic, shorter-horizon models (the Frontera programs), trading only liquid instruments listed on major exchanges and describing its methodology as transparent rather than black-box. The firm is an investment manager rather than a software vendor: it publishes no public API, no developer program and no machine-readable contract, and its client portal is a licensed third-party workspace rather than software it operates.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/ais/refs/heads/main/apis.yml)
+**Areas:** Analytics · Finance · Global Macro · Investment Analytics · Investment Management · Risk Management
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## AIS Group on APIs.io
 
-## Tags:
+Everything profiled for AIS Group is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ais/](https://apis.io/providers/ais/)** — or go straight to one of the APIs or properties below.
 
- - Analytics, Finance, Insurance, Investment Analytics, Risk Management
+### APIs (1)
 
-## Timestamps
+- [AIS Client Portal](https://apis.io/apis/ais/ais-client-portal/) — The AIS Client Portal is the secure area where financial advisors and individual investors reach AIS statements, performance reporting and account…
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### AIS Client Portal
-The AIS Client Portal provides investment analytics, portfolio management, and reporting tools for financial advisors and individual investors. The portal enables access to AIS investment strategies, performance data, risk analytics, and account management features through a secure web-based interface.
+#### Security (1)
 
-**Human URL:** [https://clients.aisgroup.com](https://clients.aisgroup.com)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Ais Domain Security](https://apis.io/security/ais/ais-domain-security/)
 
- - Analytics, Client Portal, Investment Analytics, Portfolio Management, Reporting
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://www.aisgroup.com)
-- [Login](https://clients.aisgroup.com)
+- [Ais Plans Pricing](https://apis.io/plans/ais/ais-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Ais Rate Limits](https://apis.io/rate-limits/ais/ais-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Ais Finops](https://apis.io/finops/ais/ais-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.aisgroup.com)
-- [Contact](https://www.aisgroup.com/contact)
-- [Privacy Policy](https://www.aisgroup.com/privacy-policy)
+- [Privacy policy](https://www.aisgroup.com/privacy-policy)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Global Investment Analytics | Quantitative analysis across commodity, currency, equity, and fixed-income markets to identify investment opportunities. |
-| Non-Correlated Strategies | Investment strategies designed to provide diversifying return streams with low correlations to traditional and alternative investments. |
-| Macroeconomic Research | Independent macroeconomic and intermarket analysis supporting tactical asset allocation and risk management decisions. |
-| Client Portfolio Reporting | Comprehensive portfolio reporting and performance analytics accessible via the secure client portal. |
-| Risk Management Analytics | Risk-adjusted return analysis and portfolio risk metrics to support investment decision-making. |
+**Kin Score 9.1** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 17.1 |
 
-| Name | Description |
-|------|-------------|
-| Portfolio Diversification | Financial advisors use AIS analytics to identify non-correlated investment strategies that reduce portfolio concentration risk. |
-| Tactical Asset Allocation | Institutional investors leverage AIS macroeconomic research to inform tactical shifts across asset classes. |
-| Alternative Investment Research | Investment professionals access AIS quantitative models to evaluate alternative and global investment opportunities. |
-| Performance Benchmarking | Clients use the portal's reporting tools to benchmark portfolio performance against relevant indices and peer groups. |
+**Agent readiness 2.5** — human-only
 
-## Maintainers
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-**FN:** Kin Lane
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
 
-**Email:** kin@apievangelist.com
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ais/](https://apis.io/providers/ais/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AIS Group: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ais/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
